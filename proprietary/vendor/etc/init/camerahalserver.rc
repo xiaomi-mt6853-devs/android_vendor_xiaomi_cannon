@@ -1,0 +1,10 @@
+service camerahalserver /vendor/bin/hw/camerahalserver
+    class main
+    user cameraserver
+    group audio camera input drmrpc sdcard_rw system media graphics
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles CameraServiceCapacity MaxPerformance
+
+on boot
+    chmod 0666 /sys/kernel/fpsgo/common/force_onoff

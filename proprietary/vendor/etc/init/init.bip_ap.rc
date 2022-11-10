@@ -1,0 +1,29 @@
+#
+## BIP related services (Begin)
+#
+on property:vendor.ril.md_status_from_ccci=ready
+    start vendor.bip_ap
+
+on property:vendor.ril.md_status_from_ccci=reset
+    stop vendor.bip_ap
+
+on property:vendor.ril.md_status_from_ccci=stop
+    stop vendor.bip_ap
+
+on property:vendor.ril.md_status_from_ccci=flightmode
+    stop vendor.bip_ap
+
+on property:vendor.ril.md_status_from_ccci=exception
+    stop vendor.bip_ap
+
+service vendor.bip_ap /vendor/bin/bip_ap
+    class core
+    socket vendor.bip_ap stream 660 root system
+    user root
+    group system log inet radio net_admin root
+    oneshot
+    disabled
+
+#
+## BIP related services (End)
+#

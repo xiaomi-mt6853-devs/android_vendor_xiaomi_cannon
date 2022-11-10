@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+listeners is a statues set,if corresponding position is 1, that mean reg this listener.
+    Now, contain the listener is:
+    receiver,wifi_spot,bluetooth,bluetooth_pan,sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb
+
+    1: need to reg, 0 : don`t reg
+    like for J18 device, listeners that need to reg is:  11111111110
+    like for J3S device, listeners that need to reg is:  11111111100
+    like for J1/J2 device, listeners that need to reg is 11111011000
+
+dsiMap：
+    1. F mean NA,the other state is corresponding listener value.
+    2. wifi_spot,bluetooth,bluetooth_pan is one state: hotSpot.
+
+    receiver,hotSpot,sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb
+
+    like for J18 device:
+        DSI1: 10FF1F00
+        DSI2: 10FF2F00,10FF3F00 == 10FF4F00
+        DSI3: 0020FF00
+        DSI4: 00102F00,00103F00 == 00104F00
+        an so on
+-->
+
+<SarDsiConfig>
+    <deviceSarConfig device_name="cannong">
+        <!-- <prop prop_name="persist.vendor.radio.dynamic_sar">1</prop> -->
+        <prop prop_name="ro.boot.hwc">default</prop>
+        <prop prop_name="ro.product.mod_device"></prop>
+        <!-- receiver,hotSpot(wifi_spot,(bluetooth,bluetooth_pan)),sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb -->
+        <listeners>11111111100</listeners>
+        <dsimap value="FFFFFF1">0</dsimap>
+        <dsimap value="10FF100">1</dsimap>
+        <dsimap value="10FF110">2</dsimap>
+        <dsimap value="10FF200">3</dsimap>
+        <dsimap value="10FF300">3</dsimap>
+        <dsimap value="10FF210">4</dsimap>
+        <dsimap value="10FF310">4</dsimap>
+        <dsimap value="0020F00">5</dsimap>
+        <dsimap value="0020F10">6</dsimap>
+        <dsimap value="0010200">7</dsimap>
+        <dsimap value="0010300">7</dsimap>
+        <dsimap value="0010210">8</dsimap>
+        <dsimap value="0010310">8</dsimap>
+        <dsimap value="0002F00">9</dsimap>
+        <dsimap value="0002F10">10</dsimap>
+        <dsimap value="0022F00">11</dsimap>
+        <dsimap value="0022F10">12</dsimap>
+        <dsimap value="0012200">13</dsimap>
+        <dsimap value="0012300">13</dsimap>
+        <dsimap value="0012210">14</dsimap>
+        <dsimap value="0012310">14</dsimap>
+        <dsimap value="0012100">15</dsimap>
+        <dsimap value="0012110">16</dsimap>
+        <dsimap value="F1FFFF0">17</dsimap>
+        <dsimap value="0000FF0">18</dsimap>
+        <dsimap value="00101F0">18</dsimap>
+    </deviceSarConfig>
+
+    <!-- only use for test, if you need to use other devices to test, pelease set persist.vendor.radio.dynamic_sar to 2. -->
+    <deviceSarConfig device_name="test">
+        <!-- <prop prop_name="persist.vendor.radio.dynamic_sar">1</prop> -->
+        <prop prop_name="ro.boot.hwc">test</prop>
+        <prop prop_name="ro.product.mod_device">test</prop>
+        <listeners>11111111100</listeners>
+        <dsimap value="FFFFFF1">0</dsimap>
+        <dsimap value="10FF100">1</dsimap>
+        <dsimap value="10FF110">2</dsimap>
+        <dsimap value="10FF200">3</dsimap>
+        <dsimap value="10FF300">3</dsimap>
+        <dsimap value="10FF210">4</dsimap>
+        <dsimap value="10FF310">4</dsimap>
+        <dsimap value="0020F00">5</dsimap>
+        <dsimap value="0020F10">6</dsimap>
+        <dsimap value="0010200">7</dsimap>
+        <dsimap value="0010300">7</dsimap>
+        <dsimap value="0010210">8</dsimap>
+        <dsimap value="0010310">8</dsimap>
+        <dsimap value="0002F00">9</dsimap>
+        <dsimap value="0002F10">10</dsimap>
+        <dsimap value="0022F00">11</dsimap>
+        <dsimap value="0022F10">12</dsimap>
+        <dsimap value="0012200">13</dsimap>
+        <dsimap value="0012300">13</dsimap>
+        <dsimap value="0012210">14</dsimap>
+        <dsimap value="0012310">14</dsimap>
+        <dsimap value="0012100">15</dsimap>
+        <dsimap value="0012110">16</dsimap>
+        <dsimap value="F1FFFF0">17</dsimap>
+        <dsimap value="0000FF0">18</dsimap>
+        <dsimap value="00101F0">18</dsimap>
+    </deviceSarConfig>
+</SarDsiConfig>
+
