@@ -13,7 +13,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/lib64/libfmjni.so"],
+			srcs: ["proprietary/system/lib64/libfmjni.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -39,9 +39,41 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "LocationEM2",
+	owner: "xiaomi",
+	apk: "proprietary/system/app/LocationEM2/LocationEM2.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "EngineerMode",
+	owner: "xiaomi",
+	apk: "proprietary/system/priv-app/EngineerMode/EngineerMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "ImsService",
 	owner: "xiaomi",
-	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "YGPS",
+	owner: "xiaomi",
+	apk: "proprietary/system/priv-app/YGPS/YGPS.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -87,55 +119,55 @@ android_app_import {
 dex_import {
 	name: "mediatek-common",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-common.jar"],
+	jars: ["proprietary/system/framework/mediatek-common.jar"],
 }
 
 dex_import {
 	name: "mediatek-framework",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-framework.jar"],
+	jars: ["proprietary/system/framework/mediatek-framework.jar"],
 }
 
 dex_import {
 	name: "mediatek-ims-base",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-ims-base.jar"],
+	jars: ["proprietary/system/framework/mediatek-ims-base.jar"],
 }
 
 dex_import {
 	name: "mediatek-ims-common",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-ims-common.jar"],
+	jars: ["proprietary/system/framework/mediatek-ims-common.jar"],
 }
 
 dex_import {
 	name: "mediatek-ims-extension-plugin",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
+	jars: ["proprietary/system/framework/mediatek-ims-extension-plugin.jar"],
 }
 
 dex_import {
 	name: "mediatek-services",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-services.jar"],
+	jars: ["proprietary/system/framework/mediatek-services.jar"],
 }
 
 dex_import {
 	name: "mediatek-telecom-common",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
+	jars: ["proprietary/system/framework/mediatek-telecom-common.jar"],
 }
 
 dex_import {
 	name: "mediatek-telephony-base",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+	jars: ["proprietary/system/framework/mediatek-telephony-base.jar"],
 }
 
 dex_import {
 	name: "mediatek-telephony-common",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+	jars: ["proprietary/system/framework/mediatek-telephony-common.jar"],
 }
 
 dex_import {
