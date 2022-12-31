@@ -314,18 +314,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/xiaomi/cannon/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
@@ -362,7 +358,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/cannon/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/xiaomi/cannon/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/cannon/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/cannon/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/sn100u_bootup.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_bootup.pnscr \
@@ -710,15 +705,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/ls_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/ls_client.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/meta_wifi_data.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/bt_drv_connac1x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv_connac1x.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/connfem.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/connfem.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/fmradio_drv_mt6631_6635.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv_mt6631_6635.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaiselector.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpframework.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_drvb.so \
