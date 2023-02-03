@@ -13,12 +13,13 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system/lib64/libfmjni.so"],
+			srcs: ["proprietary/system_ext/lib64/libfmjni.so"],
 		},
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -180,6 +181,15 @@ prebuilt_etc_xml {
 	name: "android.hardware.usb@1.2-service-mediatekv2",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.wifi.hostapd",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
