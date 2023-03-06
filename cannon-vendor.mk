@@ -15,14 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/system/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
     vendor/xiaomi/cannon/proprietary/system/lib/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_usb_jni.so \
     vendor/xiaomi/cannon/proprietary/system/lib/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_wifi_jni.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkadpcmextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkadpcmextractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkalacextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkalacextractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkapeextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkapeextractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkasfextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkasfextractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkaviextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkaviextractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkflvextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkflvextractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkmp3extractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkmp3extractor.so \
-    vendor/xiaomi/cannon/proprietary/system/lib64/extractors/libmtkmpeg2extractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmtkmpeg2extractor.so \
     vendor/xiaomi/cannon/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
     vendor/xiaomi/cannon/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/xiaomi/cannon/proprietary/system/lib64/libaudio_param_parser-sys.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudio_param_parser-sys.so \
@@ -185,6 +177,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechUI_ParamUnitDesc.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/SpeechVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_AudioParam.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml \
+    vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/SpeechVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_AudioParam.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_ParamUnitDesc.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/Speech_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_AudioParam.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/audio_param/Speech_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_ParamTreeView.xml \
@@ -577,7 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libavservices_minijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libawinicsmartpaparse.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
@@ -673,13 +665,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/librt_extamp_intf.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscltm.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimlock.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimmelock.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysenv.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
@@ -1040,7 +1030,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libasn1c_mapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mapi.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libasn1c_mdmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mdmi.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libavservices_minijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libavservices_minijail_vendor.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
@@ -1322,10 +1311,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilfusion.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscltm.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libsensor_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_custom.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimlock.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimmelock.so \
-    vendor/xiaomi/cannon/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
     vendor/xiaomi/cannon/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
