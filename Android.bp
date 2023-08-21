@@ -54,6 +54,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "LPPeService",
+	owner: "xiaomi",
+	apk: "proprietary/system/priv-app/LPPeService/LPPeService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "YGPS",
 	owner: "xiaomi",
 	apk: "proprietary/system/priv-app/YGPS/YGPS.apk",
