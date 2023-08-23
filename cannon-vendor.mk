@@ -265,7 +265,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml \
