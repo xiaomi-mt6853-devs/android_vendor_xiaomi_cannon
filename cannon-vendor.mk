@@ -250,6 +250,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/camera/model/rt_model/segment_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/segment_model \
     vendor/xiaomi/cannon/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/cannon/proprietary/vendor/etc/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     vendor/xiaomi/cannon/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/device_sar_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_sar_config.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/dsi_panel_j22_42_02_0a_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_j22_42_02_0a_vdo_mi.xml \
@@ -357,16 +358,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cannon/proprietary/vendor/etc/sn100u_pnx_pcv.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_pcv.pnscr \
     vendor/xiaomi/cannon/proprietary/vendor/etc/sn100u_pnx_sst.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_sst.pnscr \
     vendor/xiaomi/cannon/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermal-youtube.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-youtube.conf \
-    vendor/xiaomi/cannon/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
+    vendor/xiaomi/cannon/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/xiaomi/cannon/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/cannon/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
